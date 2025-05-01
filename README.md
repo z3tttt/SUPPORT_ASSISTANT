@@ -22,19 +22,15 @@ sqlite3 (for database management)
 Install Required Libraries 📦
 To install the necessary libraries, run the following command in your terminal:
 
-bash
-Копировать
-Редактировать
-pip install telebot sentence-transformers
+pip install -r requirements.txt
+
 Configuration ⚙️
 config.py
 The config.py file contains sensitive information like your Telegram Bot Token and admin password. Below is an example of what the file should look like:
 
-python
-Копировать
-Редактировать
 TOKEN = "your_telegram_bot_token_here"
 ADMIN_PASSWORD = "your_secure_admin_password_here"
+
 Replace the following:
 
 "your_telegram_bot_token_here" with your Telegram Bot token.
@@ -50,11 +46,9 @@ faq.db: Stores frequently asked questions (FAQ) with corresponding answers.
 
 To initialize these databases, ensure the following functions are executed in your bot's code:
 
-python
-Копировать
-Редактировать
 init_db()  # Initializes the 'requests' table in 'database.db'
 init_faq_db()  # Initializes the 'faq' table in 'faq.db'
+
 Bot Workflow 🛠️
 1. Start the Bot 🎉
 The bot welcomes users and provides them with two main options:
@@ -94,8 +88,6 @@ To enter the admin section, the bot will prompt for the admin password. If the p
 Running the Bot 🚀
 To run the bot, simply execute the Python script:
 
-bash
-Копировать
-Редактировать
 python bot.py
+
 Make sure your config.py file is properly set up and your databases are initialized before starting the bot.

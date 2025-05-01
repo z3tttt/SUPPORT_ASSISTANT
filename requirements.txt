@@ -1,0 +1,3 @@
+pyTelegramBotAPI
+sentence-transformers
+sqlite3 ; optional, often built-in with Python
